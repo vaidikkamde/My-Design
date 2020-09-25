@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Quicksand|Mansalva|Caveat|Special+Elite&display=swap');
+#logo{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+.preload-finish{
+  opacity: 0;
+  pointer-events: none;
+}
+.preload{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height:100vh;
+  transition: all 0.5s ease;
+  z-index: 1031;
+
+}
+.preloader{
+  height: 100vh;
+  width:100%;
+  background-color:#e8e4c9;
+
+}
+.dot,.sher,.bullEye,.circle,.spokes,.motto{
+  stroke: #000;
+  stroke-width:1px;
+  stroke-dashoffset:0;
+  stroke-dasharray:2000;
+}
+.sher{
+  animation: sher 5s ease-in-out infinite alternate;
+}
+@keyframes sher {
+  0%{
+    fill-opacity:0;
+    stroke-dashoffset:2000;
+  }
+  100%{
+    stroke-dashoffset:0;
+    fill-opacity:1;
+  }
+}
+.dot{
+  animation: dot 5s ease-in-out infinite alternate;
+}
+@keyframes dot {
+  0%{
+    fill-opacity:0;
+    stroke-dashoffset:2000;
+    }
+  100%{
+    fill-opacity:1
+    stroke-dashoffset:0;
+    }
+}
+.bullEye{
+  animation: bullEye 5s ease-in-out infinite alternate;
+}
+@keyframes bullEye {
+  0%{
+    fill-opacity:0
+    stroke-dashoffset:2000;
+    }
+  100%{
+    fill-opacity:1
+    stroke-dashoffset:0;
+    }
+}
+.circle{
+  animation: circle 5s ease-in-out infinite alternate;
+}
+@keyframes circle {
+  0%{
+    fill-opacity:0
+    stroke-dashoffset:2000;
+    }
+  100%{
+    fill-opacity:1
+    stroke-dashoffset:0;
+    }
+}
+.spokes{
+  animation: spokes 5s ease-in-out infinite alternate;
+}
+@keyframes spokes {
+  0%{
+    fill-opacity:0
+    stroke-dashoffset:2000;
+    }
+  100%{
+    fill-opacity:1
+    stroke-dashoffset:0;
+    }
+}
+.motto{
+  animation: motto 5s ease-in-out infinite alternate;
+}
+@keyframes motto {
+  0%{
+    fill-opacity:0;
+    stroke-dashoffset:2000;
+    }
+  100%{
+    fill-opacity:1;
+    stroke-dashoffset:0;
+    }
+
+}
+@media only screen and (max-width:900px){
+  svg{
+    width:300px;
+    height:300px;
+  }
+}
+* ,p{
+  margin: 0;
+  padding: 0;
+}
+html{
+  overflow-x: hidden;
+}
+.head-section {
+  background-color: #40514e;
+  height: 110vh;
+}
+h2{
+  font-family: 'Cinzel', serif;
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+}
+/* /------navbar css start-------/ */
+.navbar {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+}
+
+.navigation {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: auto;
+  background: #f5f5f5;
+  box-sizing: border-box;
+  color: #fff;
+  margin-bottom: 200px;
+}
+
+.navigation:before {
+  position: absolute;
+  width: 100%;
+  height: 190%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(4deg);
+}
+
+.navigation:after {
+  position: absolute;
+  width: 100%;
+  height: 190%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(-4deg);
+}
+
+/* /------navbar css ends------/ */
+/* /-----typewriter css------/ */
+#type {
+  color: white;
+  text-align: center;
+  padding-top: 7.5rem;
+  font-size: 3rem;
+  font-family: 'Special Elite', cursive;
+}
+.service-row{
+  margin-top: 4rem;
+}
+.services{
+ background-color: white;
+ color: black;
+}
+.service-head {
+  background-image: url(5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-us-head{
+  background-image: url(6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contact-us-content{
+  text-align: center;
+  background-color: black;
+  color:white;
+}
+.contact-us-para{
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+
+.service-heading {
+  font-size: 2rem;
+  color: white;
+  position: relative;
+  top:50%;
+  font-family: 'Mansalva', cursive;
+}
+.service-heading .border {
+  background-color: rgba(17,17,17, 0.8);
+  color: #fff;
+  padding: 0.75rem 4rem;
+}
+ .service-right{
+  border: 2px solid black;
+  margin: 2rem;
+  animation-duration: 2s;
+  box-shadow: 10px 5px 5px ;
+  transform: skewX(10deg);
+  text-align: right;
+}
+.service-right p,.service-left p{
+  margin: 1rem;
+}
+.service-left{
+  border: 2px solid black;
+  margin: 2rem;
+  animation-duration: 2s;
+  box-shadow: 10px 5px 5px ;
+  transform: skewX(-10deg);
+  text-align: left;
+  /* background-color: #f5f5f5; */
+
+}
+
+@media (max-width:900px) {
+  #type {
+    font-size: 2rem;
+  }
+
+  .head-section {
+    height: 125vh;
+  }
+ .fadeInLeft .wow{
+    text-align: center;
+  }
+  .fadeInRight .wow{
+    text-align: center;
+  }
+  .service-heading{
+    font-size: 1.5rem;
+  }
+  .contact-us-para{
+    font-size: 1rem;
+  }
+  .service-left,.service-right{
+    transform: skewX(0deg);
+    text-align: center;
+  }
+}
+
+@media (max-height:450px) {
+  .head-section {
+    height: 150vh;
+  }
+}
+.icon{
+  padding: 1rem;
+  margin: 0;
+}
+.icon a{
+  color:white;
+  padding: 0 1rem 0 1rem;
+}
+.icon a:hover{
+color:grey;
+}
+
+.footer{
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+}
+@media only screen and (max-width : 900px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
